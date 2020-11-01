@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void) {
+  int a, b, c;
+  printf("Digite três números: \n");
+  scanf("%d",&a);
+  scanf("%d",&b);
+  scanf("%d",&c);
+
+  if (a<(b+c))
+    printf("É um triângulo!");
+  else
+    printf("Não é um triângulo!");
+
+
+  return 0;
+}
