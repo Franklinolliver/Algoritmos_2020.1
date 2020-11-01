@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+  int a, b, c, Maior=0;
+  scanf("%d",&a);
+  scanf("%d",&b);
+  scanf("%d",&c);
+  
+  if (a > b && a > c)
+    Maior = a;
+  if (b > a && b > c)
+    Maior = b;
+  if (c > a && c > b)
+    Maior = c;
+
+  printf("%d é maior!",Maior);
+
+  return 0;
+}
