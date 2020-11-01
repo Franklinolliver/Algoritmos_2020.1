@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+  float nota1, nota2, media;
+  scanf("%f",¬a1);
+  scanf("%f",¬a2);
+
+  media = ((nota1*2)+(nota2*3))/5;
+
+  if (media >= 60)
+    printf("Aprovado");
+  else
+    printf("Reprovador");
+    
+  return 0;
+}
