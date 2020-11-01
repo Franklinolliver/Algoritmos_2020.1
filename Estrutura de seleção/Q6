@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) {
+  float a;
+  scanf("%f",&a);
+  
+  if (a < 0.0 || a > 10.0)
+    printf("Não é válida");
+  else
+    printf("Nota válida");
+    
+  return 0;
+}
