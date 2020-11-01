@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void) {
+  int a, b;
+  scanf("%d",&a);
+  scanf("%d",&b);
+  
+  if (a == b)
+    printf("%d e %d são iguais!", a,b);
+ else
+    printf("Não são iguais!");
+
+  return 0;
+}
