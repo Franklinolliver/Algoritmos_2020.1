@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main(void) {
+  int a, b, c, d, e, maior=0, menor=0;
+  printf("Digite cinco números: \n");
+  scanf("%d",&a);
+  scanf("%d",&b);
+  scanf("%d",&c);
+  scanf("%d",&d);
+  scanf("%d",&e);
+
+if (a>b && a>c && a>d && a>e)
+  maior = a;
+if (b>a && b>c && b>d && b>e)
+  maior = b;
+if (c>a && c>b && c>d && c>e)
+  maior = c;
+if (d>a && d>b && d>c && d>e)
+  maior = d;
+if (e>a && e>b && e>c && e>d)
+  maior = e;
+printf("O MAIOR número é %d \n",maior);
+
+
+if (a<b && a<c && a<d && a<e)
+  menor = a;
+if (b<a && b<c && b<d && b<e)
+  menor = b;
+if (c<a && c<b && c<d && c<e)
+  menor = c;
+if (d<a && d<b && d<c && d<e)
+  menor = d;
+if (e<a && e<b && e<c && e<d)
+  menor = e;
+printf("O MENOR número é %d",menor);
+
+
+  return 0;
+}
