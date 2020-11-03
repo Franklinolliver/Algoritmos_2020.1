@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main(void) {
+  int d, m, a;
+  printf("Digite uma data nesse formato (DD/MM/AAAA): ");
+  scanf("%d/%d/%d", &d, &m, &a);
+
+  if (a >= 1900 && a <= 9999){
+
+    if (m >= 1 && m <= 12){
+
+      if ((d >= 1 && d <= 31) && (m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12))
+        printf("A data %d/%d/%d é válida!\n", d,m,a);
+
+      else if ((d >= 1 && d <= 30) && (m == 4 || m == 6 || m == 9 || m == 11))
+          printf("A data %d/%d/%d é válida!\n", d,m,a);
+
+      else if ((d >= 1 && d <= 28) && (m == 2))
+          printf("A data %d/%d/%d é válida!\n", d,m,a);
+
+      else if (d == 29 && m == 2 && (a % 400 == 0 || (a % 4 == 0 && a % 100 != 0)))
+          printf("A data %d/%d/%d é válida!\n", d,m,a);
+      else
+          printf("Dia inválido!\n");
+    }
+    else{
+      printf("Mês inválido!\n");
+    }
+  }
+  else{
+    printf("Ano inválido!\n");
+  }
+
+  return 0;
+} 
