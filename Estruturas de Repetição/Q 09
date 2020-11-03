@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+  int x[10];
+  int i;
+  int soma=0;
+
+  printf("Digite 10 números: ");
+  for(i=0;i<=9;i++){
+    scanf("%d",&x[i]);
+    soma+=x[i];
+  }
+  printf("%d\n", soma);
+  
+  return 0;
+}
