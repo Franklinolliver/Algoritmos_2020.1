@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(int argc, char ** argv) {
+  int x = 1;
+
+  printf("Multiplos de 3:\n");
+  for(int y = 1; y <= 200; y = y+3){
+   printf("%d\t",y);
+  }
+  printf("\n");
+
+  printf("Multiplos de 5:\n");
+  for(int y = 1; y <= 200; y = y+5){
+   printf("%d\t",y);
+  }
+  
+  return 0;
+
+}
