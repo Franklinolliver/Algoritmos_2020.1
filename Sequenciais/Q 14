@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(void) {
+  int n, c;
+
+  printf("Digite um números:");
+  scanf("%d", &n);
+
+  do{
+    c = n % 10;
+    printf("%d", c);
+    n /= 10;
+  }
+  while(n != 0);
+  
+  return 0;
+}
