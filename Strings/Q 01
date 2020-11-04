@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+  printf("Digite um nome\n");
+  char x[100];
+  scanf("%s", x);
+  
+  printf ("A mensagem é %s \n",x);
+  printf("\nAs tres primeiras são: ");
+  for(int i=0; i<3; i++){
+   
+    printf("%c ", x[i]);
+  }
+  
+  return 0;
+}
