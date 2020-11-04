@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+float media(a,b){
+  return (a*2 + b*3)/5;
+}
+
+int main(void) {
+  printf("Digite duas notas:\n");
+  float a,b;
+  scanf("%f %f",&a,&b);
+  printf("A nota final é %.1f", media(a,b));
+
+  return 0;
+}
