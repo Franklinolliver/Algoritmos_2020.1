@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+  float l , p, metro, potencia, qt;
+
+  printf("Largura: ");
+  scanf("%f", &l);
+
+  printf("Profundidade: ");
+  scanf("%f" , &p);
+
+  metro = l*p;
+  potencia = metro * 18;
+  qt = potencia / 60;
+
+  printf("São necessárias %.0f lampadas de 60W", qt);
+  return 0;
+}
