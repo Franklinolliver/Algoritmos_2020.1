@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void) {
+  int a,b,total;
+
+  printf("Hora: ");
+  scanf("%d",&a);
+  
+  printf("Minutos: ");
+  scanf("%d",&b);
+
+  total = (a*60) + b;
+
+  printf("Passaram-se %.2d minutos desde o início do dia", total);
+
+  return 0;
+}
