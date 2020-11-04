@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+  float a, b, x, y;
+
+  printf("Valor NOTA 01: ");
+  scanf("%f", &a);
+  printf("Valor NOTA 02: ");
+  scanf("%f", &b);
+
+  x = a;
+  y = b;
+  a = y;
+  b = x;
+
+  printf("Valor invertido da NOTA 01 é %.1f .\nValor invertido da NOTA 02 é %.1f .", a,b);
+
+  return 0;
+}
