@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+  float s, v, i, total;
+
+  printf("Salário: ");
+  scanf("%f", &s);
+
+  printf("Total das Vendas: ");
+  scanf("%f", &v);
+
+  i = s - (s * 0.06);
+  v = (v * 0.05) + v;
+  total = i + v;
+
+  printf("O salario a receber é de R$ %.2f", total);
+
+  return 0;
+}
