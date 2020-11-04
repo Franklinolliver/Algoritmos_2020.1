@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(int argc, char **argv) {
+  printf("Digite um texto:\n");
+  char text[50], dif = 'a' - 'A';
+  gets(text);
+  printf("\n");
+
+  for(int i=0; i<strlen(text); i++){
+    if(text[i]>='a' && text[i]<= 'z'){
+      printf("%c", text[i]-dif);
+    } 
+    else{
+      printf("%c", text[i]);
+    }
+  }
+  
+  return 0;
+}
