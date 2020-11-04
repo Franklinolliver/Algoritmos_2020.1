@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(int argc, char **argv) {
+  printf("Digite um texto:\n");
+  char text[50];
+  gets(text);
+
+  for(int i=0; i<strlen(text); i++){
+    if(text[i] != 'a' && text[i] != 'e' && text[i] != 'i' && text[i] != 'o' && text[i] != 'u'){
+      printf("%c", text[i]);
+    }
+  }
+  printf("\n\n");
+  
+  return 0;
+}
