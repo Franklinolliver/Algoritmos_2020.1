@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main(void) {
+  int a;
+  printf("Digite um número inteiro\n");
+  scanf("%d", &a);
+
+  if(a <= 9){
+    printf("O número %d tem 1 digito .", a);
+  }
+  else if(a >= 10 && a <= 99){
+    printf("O número %d tem 2 digitos ." , a);
+  }
+  else if(a >=100 && a <=999){
+    printf("O número %d tem 3 digitos ." , a);
+  }
+  else if(a >= 1000 && a <=9999){
+    printf("O número %d tem 4 digitos ." , a);
+  }
+  else if(a >= 10000 && a <=99999){
+    printf("O número %d tem 5 digitos ." , a);
+  }
+  else if(a >= 100000 && a <=999999){
+    printf("O número %d tem 6 digitos ." , a);
+  }
+  else if(a >= 1000000 && a <=9999999){
+    printf("O número %d tem 7 digitos ." , a);
+  }
+  
+  return 0;
+}
