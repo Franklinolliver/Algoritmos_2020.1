@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int soma(int a, int b){
+    return a+b;
+}
+
+int main(void) {
+  printf("Digite dois numeros inteiros\n");
+  int a,b;
+  scanf("%d %d",&a,&b);
+  printf("A soma é igual a %d", soma(a,b));
+
+  return 0;
+}
