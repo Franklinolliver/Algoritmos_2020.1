@@ -13,7 +13,7 @@ int main(void) {
   potencia = metro * 18;
   qt = potencia / 60;
 
-  printf("São necessarias %.0f lampadas de 60W .", qt);
+  printf("São necessárias %.0f lampadas de 18W .", qt);
 
   return 0;
 }
