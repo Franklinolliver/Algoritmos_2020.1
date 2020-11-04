@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+  float salario, gratificacao, novo_salario;
+
+  printf("Digite o valor do salario: ");
+  scanf("%f", &salario);
+
+  gratificacao = (salario*0.05) + salario; 
+  novo_salario = gratificacao - (salario*0.07);
+
+  printf("O valor do novo salario é igual a R$ %.2f .", novo_salario);
+
+  return 0;
+}
